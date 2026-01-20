@@ -3,8 +3,10 @@ import Counter from "./components/Counter";
 import Button from "./components/Button";
 import Header from "./components/Header";
 import TodoItem from "./components/TodoItem";
-import "./App.css";
 import UseEffectHook from "./components/useEffect/UseEffectHook";
+import { Timer } from "./components/useEffect/Timer";
+import "./App.css";
+
 
 const App = () => {
   
@@ -14,7 +16,8 @@ const App = () => {
   return (
     <div className="wrapper">
       {/* <Counter /> */}
-      <UseEffectHook />
+      {/* <UseEffectHook /> */}
+      <Timer/>
       {/* <div className="todo-container">
         <Header title="Tasks" />
         <TodoItem text="Eat" />
