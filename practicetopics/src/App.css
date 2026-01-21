@@ -27,3 +27,21 @@ h1 {
   margin-bottom: 12px;
   border-radius: 12px;
 }
+
+.container {
+  width: 300px;
+  margin: auto;
+}
+
+.user-btn {
+  background-color: #c7d3bc;
+  border: none;
+  color: white;
+  border-radius: 18px;
+  padding: 15px 18px;
+  font-weight: 700;
+}
+
+.user-btn:hover {
+  background-color: #b3cf73;
+}
