@@ -29,6 +29,7 @@ const Movie = () => {
     } catch (error) {
       console.log(error);
       setError("Failed to fetch movie data");
+      //Handling Errors with Built-in Axios Features
       console.error("Error message:", error.message);
       console.error("Error status:", error.response.status);
       console.error("Error data:", error.response.data);
