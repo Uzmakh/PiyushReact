@@ -1,6 +1,7 @@
-import axios from "axios";
+// import axios from "axios";
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard/MovieCard";
+import { getMovie } from "../../services/GetService";
 
 const Movie = () => {
   // const [movieData, setMovieData] = useState(null);  //for object
@@ -10,14 +11,17 @@ const Movie = () => {
 
   // const API = "http://www.omdbapi.com/?i=tt3896198&apikey=a5677765"; //getting an object
 
-  const API = "http://www.omdbapi.com/?s=guardians&apikey=a5677765"; //getting an array
+  // const API = "http://www.omdbapi.com/?s=guardians&apikey=a5677765"; //getting an array
 
   const getMoviesData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(API);
+      // const response = await axios.get(API);
       // console.log(response);
       // console.log(response.data);
+
+      // Added new line after creating GetService.jsx file,importing axios there(more professional way)
+      const response = await getMovie();
 
       console.log("Response object:", response);
       console.log("Response.data type:", typeof response.data);
