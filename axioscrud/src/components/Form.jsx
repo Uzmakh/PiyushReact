@@ -18,11 +18,12 @@ export const Form = ({
   // get the updated data and add into input field
   useEffect(() => {
     updateDataApi &&
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setAddData({
         title: updateDataApi.title || "",
         body: updateDataApi.body || "",
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [updateDataApi]);
 
   function handleInputChange(e) {
