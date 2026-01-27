@@ -4,6 +4,9 @@ import { Board } from "./TicTacToeGame/Board";
 import { PostCard } from "./CallingAPI/API/components/PostCard";
 import UserCard from "./CallingAPI/API/components/UserCard";
 import Movie from "./CallingAPI/API/pages/Movie";
+import { Clock } from "./DigitalClock/Clock-1";
+// import Clock2 from "./DigitalClock/Clock-2";
+import DropDowns from "./DigitalClock/DropDowns/DropDowns";
 import "./App.css";
 
 const App = () => {
@@ -34,7 +37,9 @@ const App = () => {
           <p>No data</p>
         )} */}
       {/* </div> */}
-      <Movie/>
+      {/* <Movie/> */}
+      {/* <Clock /> */}
+      <DropDowns/>
     </>
   );
 };
