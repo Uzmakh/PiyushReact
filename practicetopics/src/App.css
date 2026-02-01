@@ -45,3 +45,9 @@
 .user-btn:hover {
   background-color: #b3cf73;
 }
+
+.color-container {
+  border: 1px solid black;
+  width: 50vw;
+  height: 40vh;
+}
