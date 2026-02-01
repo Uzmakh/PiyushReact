@@ -10,7 +10,7 @@ const ColorFeature = ({getColor}) => {
   }
   return (
     <div>
-      <input type="text" id='input' aria-label='input' onChange={handleChange} value={activeColor}/>
+      <input type="text" id='input' aria-label='input' onChange={handleChange} value={activeColor} placeholder='Type color of your choice'/>
     </div>
   )
 }
