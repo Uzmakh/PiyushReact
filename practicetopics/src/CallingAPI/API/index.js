@@ -1,3 +1,5 @@
+//* Calling API using fetch method
+
 //* For Example-1
 export const getPosts = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
