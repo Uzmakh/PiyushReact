@@ -7,6 +7,7 @@ import InputExample from "../ReactHooks/useState/InputExample";
 const UseStatePage = () => {
   return (
     <div>
+      <h1>Examples of Using useState hook</h1>
       <ToggleText />
       <LikeButton />
       <UserProfile />
