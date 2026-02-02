@@ -10,6 +10,7 @@ import DropDowns from "./DigitalClock/DropDowns/DropDowns";
 import ColorFeature from "./ColorFeature/ColorFeature";
 import Form from "./ControlledComponents/Form";
 import UseStatePage from "./pages/UseState";
+import FormHandlingPage from "./pages/FormHandlingPage";
 
 import "./App.css";
 
@@ -57,7 +58,8 @@ const App = () => {
       ></div>
       <ColorFeature getColor={getColor} /> */}
       {/* <Form/> */}
-      <UseStatePage/>
+      {/* <UseStatePage/> */}
+      <FormHandlingPage/>
      
     </>
   );
