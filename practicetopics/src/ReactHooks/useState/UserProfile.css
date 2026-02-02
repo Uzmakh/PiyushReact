@@ -1,0 +1,9 @@
+.changeBtn {
+  width: 120px;
+  height: 30px;
+  margin: 12px auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 20px;
+}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 // import { getPosts, getRandomUser } from "./CallingAPI/API";
 import { Board } from "./TicTacToeGame/Board";
 import { PostCard } from "./CallingAPI/API/components/PostCard";
@@ -9,12 +9,14 @@ import { Clock } from "./DigitalClock/Clock-1";
 import DropDowns from "./DigitalClock/DropDowns/DropDowns";
 import ColorFeature from "./ColorFeature/ColorFeature";
 import Form from "./ControlledComponents/Form";
+import UseStatePage from "./pages/UseState";
+
 import "./App.css";
 
 const App = () => {
   // const [data, setData] = useState(null);
   // const [users, setUsers] = useState(null);
-  const [UIcolor, setUIcolor] = useState(null);
+  // const [UIcolor, setUIcolor] = useState(null);
 
 
   // useEffect(() => {
@@ -29,9 +31,9 @@ const App = () => {
   //   getRandomUser().then((users) => setUsers(users.results[0]));
   // };
   // console.log(users);
-  const getColor = (color) => {
-    setUIcolor(color);
-  }
+  // const getColor = (color) => {
+  //   setUIcolor(color);
+  // }
   return (
     <>
       {/* <h1>Tic Tac Toe Game</h1>
@@ -49,12 +51,14 @@ const App = () => {
       {/* <Clock /> */}
       {/* <DropDowns/> */}
 
-      <div
+      {/* <div
         className="color-container"
         style={{ backgroundColor: `${UIcolor}` }}
       ></div>
-      <ColorFeature getColor={getColor} />
+      <ColorFeature getColor={getColor} /> */}
       {/* <Form/> */}
+      <UseStatePage/>
+     
     </>
   );
 };
