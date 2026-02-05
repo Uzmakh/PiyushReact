@@ -1,16 +1,18 @@
 // import { useState } from "react";
 // import { getPosts, getRandomUser } from "./CallingAPI/API";
-import { Board } from "./TicTacToeGame/Board";
-import { PostCard } from "./CallingAPI/API/components/PostCard";
-import UserCard from "./CallingAPI/API/components/UserCard";
-import Movie from "./CallingAPI/API/pages/Movie";
-import { Clock } from "./DigitalClock/Clock-1";
+// import { Board } from "./TicTacToeGame/Board";
+// import { PostCard } from "./CallingAPI/API/components/PostCard";
+// import UserCard from "./CallingAPI/API/components/UserCard";
+// import Movie from "./CallingAPI/API/pages/Movie";
+// import { Clock } from "./DigitalClock/Clock-1";
 // import Clock2 from "./DigitalClock/Clock-2";
-import DropDowns from "./DigitalClock/DropDowns/DropDowns";
-import ColorFeature from "./ColorFeature/ColorFeature";
-import Form from "./ControlledComponents/Form";
-import UseStatePage from "./pages/UseState";
+// import DropDowns from "./DigitalClock/DropDowns/DropDowns";
+// import ColorFeature from "./ColorFeature/ColorFeature";
+// import Form from "./ControlledComponents/Form";
+// import UseStatePage from "./pages/UseState";
 import FormHandlingPage from "./pages/FormHandlingPage";
+import CounterApp from "./ContextAPI/Counterfolder/Counter";
+import CounterContext from "./ContextAPI/Counterfolder/CounterContext";
 
 import "./App.css";
 
@@ -59,7 +61,9 @@ const App = () => {
       <ColorFeature getColor={getColor} /> */}
       {/* <Form/> */}
       {/* <UseStatePage/> */}
-      <FormHandlingPage/>
+      {/* <FormHandlingPage /> */}
+      <CounterApp />
+      <CounterContext/>
      
     </>
   );
