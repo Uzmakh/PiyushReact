@@ -13,8 +13,15 @@
 import FormHandlingPage from "./pages/FormHandlingPage";
 import CounterApp from "./ContextAPI/Counterfolder/Counter";
 import CounterContext from "./ContextAPI/Counterfolder/CounterContext";
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Navbar from "./Routing/components/Navbar";
+import ServicePage from "./Routing/pages/ServicePage";
+import HomePage from "./Routing/pages/HomePage";
+import ContactPage from "./Routing/pages/ContactPage";
 
 import "./App.css";
+import Login from "./Routing/pages/Login";
+
 
 const App = () => {
   // const [data, setData] = useState(null);
@@ -62,9 +69,19 @@ const App = () => {
       {/* <Form/> */}
       {/* <UseStatePage/> */}
       {/* <FormHandlingPage /> */}
-      <CounterApp />
-      <CounterContext/>
-     
+
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path="/form" element={<FormHandlingPage />} />
+          <Route path="/counter" element={<CounterApp />} />
+          <Route path="/countercontext" element={<CounterContext />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
